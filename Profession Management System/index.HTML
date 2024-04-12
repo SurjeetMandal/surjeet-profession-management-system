@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profession Management System</title>
+    <link rel="shortcut icon" href="img/My LOGO.jpg" type="image/x-icon">
+    <!--Google font linked here-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--CSS linked here-->
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+
+    <!--This Section1 consisting of Heading and input form-->
+    <section id="section1" class="container">
+        <p class="heading">New Employee</p>
+            <form action="submit" class="form_content">
+                <div class="content">
+                    <label for="name">Enter Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="content">
+                    <label for="Profession">Enter Profession</label>
+                    <input type="text" id="Profession">
+                </div>
+                <div class="content">
+                    <label for="age">Enter Age</label>
+                    <input type="text" id="age">
+                </div>
+            </form>
+            <button onclick="onClick(), clear()" class="main-btn">Add User</button>
+    </section>
+
+    <!--This Section2 contain Alert and added Employees-->
+    <section id="section2" class="container">
+        <div class="alert">
+            <p class="heading heading_2">Added Employees</p>
+            <p class="fade">You have 0 Employees.</p>
+        </div>
+        <div class="employee_info">               
+        </div>
+    </section>
+
+
+
+
+    <!--JS linked here-->
+    <script src="Script.JS"></script>
+</body>
+</html>
